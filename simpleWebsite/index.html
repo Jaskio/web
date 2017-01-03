@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Jasmin Bektic">
+    <title>Imel</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+    <body>
+        <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+           
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <a href="index.html">
+                    <img id="logo" src="images/logoimel.png"> 
+                    </a>
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="usluge.html">Usluge</a></li>
+                    <li><a href="o_nama.html">O nama</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                </ul>
+            </div>
+        </nav>
+     
+        <div class="container-fluid">
+            <div class="row">
+                <section class="col-sm-12">
+                    <h1>Dobrodošli na najveći domaći online webshop</h1>
+                        <p id="podnaslov">Imel je prisutan na tržištu od 1994. godine. Danas ima 40 visokostručnih i visokospecijalizovanih osoba u stalnom radnom odnosu i nekoliko vanjskih saradnika.</p>
+                </section>
+                    
+                <section class="col-sm-9 col-sm-push-3 mainContent">
+                    <h2>BIT – biznis informacione tehnologije</h2>
+                        <p>Dio preduzeća koji se bavi prometom IT opreme, informaciono tehničkim konsaltingom, računarskim mrežama, operativnim sistemima i sl.</p>
+                        <hr>
+                        <p id="prelom">Informativne, edukativne i softverske usluge</p>
+                     
+    <script type="text/javascript">
+        var text = ["Nudimo vam obimnu paletu softverskih solucija", "Specijalizovano osoblje vama na raspolaganju", "Svjetski brendovi, niske cijene, vrhunski kvalitet", "Informativne, edukativne i softverske usluge"];
+        var counter = 0;
+        var elem = document.getElementById("prelom");
+        setInterval(change, 3000);
+        function change() {
+        elem.innerHTML = text[counter];
+            counter++;
+            if(counter >= text.length) { 
+                counter = 0; 
+            }
+        }
+    </script>
+                    <hr>
+                    <h2 id="bis">BIS – biznis informacioni sistemi</h2>
+                        <p>Dio preduzeća koji se bavi poslovnim konsaltingom, projektovanjem poslovnih informacionih sistema, proizvodnjom i implementacijom softvera i sl. Poslovno okruženje je danas jako složeno i nepredvidivo. To postavlja potrebu korištenja niza informacija i znanja baziranog na njima.
+                        Dugogodišnje iskustvo u radu sa različitim kompanijama i organizacijama pretvoreno je u u ERP (Enterprise Resource Planing) poslovna rješenja koja su uspješno našla primjenu u prozvodnim, trgovačkim i uslužnim kompanijama, javnom sektoru, nevladinim i drugim organizacijama.</p>
+                    <br>
+                    <br>
+                 </section>
+                
+                 <aside class="col-sm-3 col-sm-pull-9 sideNotes">
+                    <div id="background_cycler" >
+        
+    <script type="text/javascript">
+        $('#background_cycler').hide();
+    </script>
+                        <img class="active" src="images/noteImg4.jpg">             
+                        <img src="images/noteImg2.jpg">
+                        <img src="images/noteImg3.jpg">	                                     
+                        <img src="images/noteImg1.jpg">                          
+                     </div>
+    
+    <script>
+        function cycleImages(){
+            var $active = $('#background_cycler .active');
+            var $next = ($('#background_cycler .active').next().length > 0) ? $('#background_cycler .active').next() : $('#background_cycler img:first');
+            $next.css('z-index',2);
+            $active.fadeOut(2000,function(){
+                $active.css('z-index',1).show().removeClass('active');
+                $next.css('z-index',3).addClass('active');
+            });
+        }
+        $(window).load(function(){
+		  $('#background_cycler').fadeIn(2000);
+		  setInterval('cycleImages()', 5000);
+        })
+    </script>
+                     <a href="http://www.imel.ba/da-li-ste-se-susreli-sa-hakerskim-napadima/">
+                     <p class="quotes">Da li ste se susreli sa hakerskim napadima?</p>
+                     </a>
+                     
+                     <a href="http://www.imel.ba/direktor-kompanije-imel-mevludin-celikovic-gost-business-cafea/">
+                     <p class="quotes">Direktor kompanije IMEL Mevludin Čeliković gost Business cafea</p>
+                     </a>
+                     
+                     <a href="http://www.imel.ba/ucenici-elektro-masinske-skole-u-posjeti-nasoj-kompaniji/">
+                     <p class="quotes">Učenici Elektro mašinske škole u posjeti našoj kompaniji</p>
+                     </a>
+                     
+                     <a href="http://www.imel.ba/zavrsen-iii-ciklus-edukacije-kurs-knjigovodstva-pocetni-nivo/">
+                     <p class="quotes">Završen III ciklus edukacije „Kurs knjigovodstva – početni nivo“</p>
+                     </a>
+    <script>
+        (function() {
+            var quotes = $(".quotes");
+            var quoteIndex = -1;
+            function showNextQuote() {
+                ++quoteIndex;
+                quotes.eq(quoteIndex % quotes.length)
+                      .fadeIn(1500)
+                      .delay(1500)
+                      .fadeOut(2000, showNextQuote);
+            }
+            showNextQuote();
+        })();	
+    </script>
+                 </aside>
+            </div>
+        </div>
+        
+        <footer id ="footer" class="container-fluid">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="usluge.html">Usluge</a></li>
+                <li><a href="o_nama.html">O nama</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+            <hr> 
+            <p>© Copyright 2016 Imel d.o.o Lukavac </p>
+        </footer>
+    
+    </body>
+</html>

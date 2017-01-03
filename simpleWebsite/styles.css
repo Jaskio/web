@@ -1,0 +1,416 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=PT+Sans');
+
+
+/* Navigation podesavanja */
+.navbar-nav {
+    float: none;
+    text-align: right;
+    margin-right: 50px;
+}
+
+.navbar-nav li {
+    float: none;
+    display: inline-block;
+}
+
+.navbar-custom {
+    background-color: #0E8AF7; 
+}
+
+.navbar-custom .navbar-brand {
+    color: #FFFFFF;
+}
+
+.navbar .nav > li > a, .navbar .nav > li > a:first-letter,
+.navbar .nav > li.current-menu-item > a, 
+.navbar .nav > li.current-menu-ancestor > a {
+    font-size: 15px;
+    font-family: montserrat;
+}
+
+.navbar-custom .navbar-toggle {
+    border-color: #667883;
+}
+
+.navbar-custom .navbar-toggle:hover,
+.navbar-custom .navbar-toggle:focus {
+    background-color: #E7E7E7;
+}
+
+.navbar-custom .navbar-toggle .icon-bar {
+    background-color: #667883;
+}
+
+.navbar-custom .navbar-brand:hover,
+.navbar-custom .navbar-brand:focus {
+    color: #5E5E5E;
+}
+
+.navbar-custom .navbar-nav > li > a {
+    color: #FFFFFF;
+}
+
+.navbar-custom .navbar-nav > li > a:hover,
+.navbar-custom .navbar-nav > li > a:focus {
+    color: #333;
+}
+
+.navbar-custom .navbar-nav > .active > a, 
+.navbar-custom .navbar-nav > .active > a:hover, 
+.navbar-custom .navbar-nav > .active > a:focus {
+    color: #555;
+    background-color: #E7E7E7;
+}
+
+.navbar-custom .navbar-nav > .open > a, 
+.navbar-custom .navbar-nav > .open > a:hover, 
+.navbar-custom .navbar-nav > .open > a:focus {
+    color: #555;
+    background-color: #D5D5D5;
+}
+
+.navbar-custom .navbar-nav > .dropdown > a .caret {
+    border-top-color: #777;
+    border-bottom-color: #777;
+}
+
+.navbar-custom .navbar-nav > .dropdown > a:hover .caret,
+.navbar-custom .navbar-nav > .dropdown > a:focus .caret {
+    border-top-color: #333;
+    border-bottom-color: #333;
+}
+
+.navbar-custom .navbar-nav > .open > a .caret, 
+.navbar-custom .navbar-nav > .open > a:hover .caret, 
+.navbar-custom .navbar-nav > .open > a:focus .caret {
+    border-top-color: #555;
+    border-bottom-color: #555;
+}
+
+#logo {
+    float: left;
+    margin-left: 50px;
+}
+
+
+
+/* Home podesavanja */
+.container-fluid {
+    background-color: #F2F1F1;
+}
+
+h1 {
+    font-size: 52px;
+    line-height: 58px;
+    text-align: center;
+    padding: 40px 100px 20px 100px;
+}
+
+#podnaslov {
+    font-family: montserrat;
+    font-size: 22px;
+    text-align: center;
+    line-height: 35px;
+    padding: 20px 200px 50px 200px;
+}
+
+.row {
+    background-color: white;
+    margin: 120px 50px 30px 50px;
+}
+
+.sideNotes img {
+    width: 100%;
+    padding: 0 40px 0 50px;
+   
+}
+
+.sideNotes p {
+    width: 100%;
+    padding: 160px 40px 20px 50px;
+    font-size: 12px;
+    font-weight: 18px;
+}
+
+.quotes {
+    display: none;
+}
+
+#background_cycler {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 150px;
+    position: absolute;
+    top: 0;
+    left: 7px;
+}
+
+#background_cycler img {
+    position: absolute;
+    left: 7px;
+    top: 0;
+    width: 100%;
+    height: 150px;
+    z-index: 1;
+}
+
+#background_cycler img.active {
+    z-index: 3;
+}
+
+h2 {
+    margin: 0 auto;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+h1, h2 {
+    font-family: montserrat;
+    color: #3C3D41;
+}
+
+p {
+    color: #666D70;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 18px;
+    padding-top: 15px;
+}
+
+.mainContent {
+    padding-right: 80px;
+}
+
+.mainContent hr {
+    height: 1px;
+    background-color: #C6C2C2;
+    width: 100%; 
+    margin: 40px 0 20px 0;
+}
+
+#prelom {
+    font-size: 32px;
+    margin: -20px 0 -20px 0;
+    text-align: center;
+}
+
+#bis {
+    margin-top: 40px;
+}
+
+#footer {
+    min-height: 100px;
+    width: 100%;
+    background-color: #262729;
+    text-align: center;
+}
+
+footer ul {
+    padding: 25px 0 15px 0;
+}
+
+footer li {
+    display: inline;
+    margin: 0 10px;
+}
+
+footer li a {
+    font-family: montserrat;
+    color: #D8DDDE;
+}
+
+hr {
+    border: none;
+    height: 2px;
+    background-color: #333;
+    width: 50%;
+}
+
+footer p {
+    color: #7D7878;
+    padding-bottom: 20px;
+    margin-top: -20px;
+    font-family: PTSans;
+}
+
+
+
+/* Kontakt podesavanja */
+.contact {
+    text-align: center;
+    padding: 0 30px 0 100px;
+}
+
+.contact h1 {
+    font-size: 24px;
+    color: #666D70;
+    margin-top: -20px;
+}
+
+hr.vertical {
+    width: 1px;
+    height: 500px;
+    background-color: #C6C2C2;
+} 
+
+.sideInfo {
+    padding-left: 20px;
+}
+
+.sideInfo img {
+    width: 50%;
+}
+
+.sideInfo p {
+    font-size: 12px;
+    color: #666D70;
+    margin-right: 40px;
+    font-family: montserrat;
+    margin-top: -20px;
+}
+
+.sideInfo h3 {
+    padding-top: 20px;
+    font-size: 20px;
+    font-family: montserrat;
+}
+
+
+
+/* Blog podesavanja */
+#blog {
+    text-align: center;
+    margin: 120px 0 50px 0;
+}
+
+
+
+/* Usluge podesavanja */
+.leftContent h3, .rightContent h3 {
+    text-align: center;
+    padding-top: 30px;
+}
+
+.leftContent br, .rightContent br {
+    line-height: 35px;
+}
+
+.leftContent, .rightContent {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.leftContent p, .rightContent p {
+    text-align: justify;
+    padding-bottom: 50px;
+}
+
+.leftContent img, .rightContent img {
+    width: 100%;
+}
+
+
+
+/* O_nama podesavanja */
+#uvod {
+    margin: 40px 50px 0 50px;
+    text-align: center;
+}
+
+.main hr {
+    width: 80%;
+    height: 1px;
+    background-color: #C6C2C2;
+}
+
+.zadnjaSekcija {
+    padding-bottom: 30px;
+}
+
+.katalog {
+    text-align: center;
+    margin-top: 50px;
+}
+
+
+
+
+
+/* Mobilna verzija */
+@media (max-width: 767px) {
+    h1 {
+        padding: 0%;
+        font-size: 250%;
+        line-height: 100%;
+    }
+    
+    .row {
+        margin: 5%;
+        margin-top: 25%;
+    }
+    
+    #podnaslov {
+        padding: 0%; 
+        line-height: 120%;
+        margin-top: 30px;
+        margin-bottom: 40px;
+    }
+    
+    p {
+        text-align: justify;
+    }
+    
+    .mainContent {
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+    
+    .sideNotes {
+        text-align: center;
+    }
+    
+    .sideNotes img, .sideNotes p {
+        margin-left: -20px;
+    }
+    
+    #blog img:first-child {
+        width: 50%;
+        padding-top: 25%;
+        padding-bottom: 25%;
+    }
+    
+    .leftContent h3, .rightContent h3 {
+        margin-right: 20px;
+    }
+    
+    .leftContent img, .rightContent img {
+        width: 100%;
+    }
+    
+    .katalog img {
+        width: 100%;
+    }
+    
+    .contact {
+        padding: 0 30px 0 30px;
+    }
+    
+    .contact h1 {
+        margin-top: 20px;
+    }
+    
+    hr.vertical {
+        width: 0px;
+        height: 0px;
+    }
+    
+    .navbar-custom .navbar-nav .open .dropdown-menu > li > a {
+        color: #777;
+    }
+    
+    .navbar-custom .navbar-nav .open .dropdown-menu > li > a:hover,
+    .navbar-custom .navbar-nav .open .dropdown-menu > li > a:focus {
+        color: #333;
+    }
+}
