@@ -1,0 +1,9 @@
+#clickableArea {
+    width: 80%;
+    height: 80%;
+}
+
+#shape {
+    display: none;
+    position: relative;
+}
