@@ -1,0 +1,53 @@
+@import url(https://fonts.googleapis.com/css?family=Oxygen);
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#wrapper {
+    width: 430px;
+    margin: 0 auto;
+}
+
+.form-element {
+    padding-bottom: 5px;
+}
+
+label {
+    color: #423F3F;
+    font-family: oxygen;
+    font-size: 22px;
+    float: left;
+    width:220px;
+}
+
+input {
+    border-radius: 5px;
+    border: 2px solid #BCC2BA;
+    height: 30px;
+    width: 210px;
+}
+
+#submitButton {
+    width: 100px;
+    position: relative;
+    left: 220px;
+    background-color: #48F514;
+    border-color: #48F514;
+    font-family: oxygen;
+}
+
+#submitButton:active {
+    background-color: #A3F78B;
+}
+
+.errors {
+    color: #FF4242;
+    position: relative;
+    left: 220px;
+    top: -5px;
+    bottom: 10px;
+    font-family: roboto;
+}

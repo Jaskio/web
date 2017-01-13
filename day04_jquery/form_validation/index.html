@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>Form Validation</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    
+    <body>
+        <div id="wrapper">
+            <div class="form-element">
+                <label form="email">Email:</label>
+                <input type="text" name="email" id="email" placeholder="eg. yourname@gmail.com">
+            </div>
+            <div id="emailError" class="errors"></div>
+            <div class="form-element">
+                <label form="Telephone:">Telephone:</label>
+                <input type="text" name="phone" id="phone" placeholder="eg. 062-456-321">
+            </div>
+            <div id="phoneError" class="errors"></div>
+            <div class="form-element">
+                <label form="password">Password:</label>
+                <input type="password" name="password" id="password" >
+            </div>
+            <div id="passwordError" class="errors"></div>
+            <div class="form-element">
+                <label form="passwordConfirm">Confirm Password:</label>
+                <input type="password" name="passwordConfirm" id="passwordConfirm">
+            </div>
+            <div class="form-element">
+                <input type="submit" id="submitButton" value="Sign Up">
+            </div>
+        </div>
+        
+        <script src="scripts/jquery-3.1.1.min.js"></script>
+        <script src="scripts/form_validation.js"></script>
+    </body>
+</html>
