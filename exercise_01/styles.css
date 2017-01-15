@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css?family=Comfortaa');
+@import url('https://fonts.googleapis.com/css?family=Calibri');
+
+.wrapper img, h1 {
+    display: inline;
+    font-size: 22px;
+    padding-bottom: 8px;
+    font-family: comfortaa;
+    font-weight: bold;
+}
+
+p {
+    font-family: calibri;
+    font-size: 16px;
+    color: #7A7171;
+}
+
+.wrapper {
+    padding-top: 90px;
+}
+
+.leftSide {
+    text-align: right;
+    padding-left: 100px;
+}
+
+.leftSide h1 {
+    padding-right: 10px;
+}
+
+.rightSide {
+    padding-right: 100px;
+}
+
+.rightSide h1 {
+    padding-left: 10px;
+}
+
+#dogImage {
+    text-align: center;
+}
+
+
+
+/* Custom */
+@media only screen and (min-width : 320px) and (max-width : 479px) {
+    .leftSide {
+        padding-left: 0%;
+        text-align: left;
+    }
+    
+    .wrapper {
+        padding-top: 10%;
+    }
+    
+    .wrapper img {
+        float: left;
+        padding-right: 10px;
+        padding-bottom: 10%;
+    }
+    
+    .rightSide h1 {
+        padding-left: 0%;
+    }
+    
+    .rightSide {
+        padding-right: 0%;
+    }
+}
+
+
+
+/* Phones */
+@media only screen and (min-width : 480px) and (max-width : 767px) {
+    .leftSide {
+        padding-left: 5%;
+        text-align: left;
+        padding-right: 5%;
+    }
+    
+    .wrapper {
+        padding-top: 5%;
+        
+    }
+    
+    .wrapper img {
+        float: left;
+        padding-right: 10px;
+        padding-bottom: 5%;
+    }
+    
+    .rightSide {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}
+
+
+
+/* Tablets */
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+    .leftSide {
+        padding-left: 3%;
+        padding-top: 30%;
+    }
+    
+    .rightSide {
+        padding-right: 3%;
+        padding-top: 30%;
+    }
+    
+    #dogImage img {
+        width: 110%;
+        padding-top: 16%;
+    }
+    
+    .wrapper {
+        padding-top: 0%;
+    }
+}
