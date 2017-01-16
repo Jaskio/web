@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css?family=Paprika');
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Oxygen');
+
+.row {
+    padding: 40px 40px 40px 40px;
+}
+
+h1 {
+    font-size: 14px;
+    margin: 0;
+    padding-bottom: 6px;
+    font-family: paprika;
+    color: #918A8A;
+}
+
+h2 {
+    margin: 0;
+    padding-bottom: 6px;
+    font-family: raleway;
+    color: #5C5959;
+}
+
+.leftSide p {
+    font-family: oxygen;
+    color: #918A8A;
+}
+
+.wrapper p {
+    margin-bottom: 27px;
+    margin-left: -15px;
+    margin-top: 2px;  
+    font-family: raleway;
+    color: #A19A9A;
+}
+
+.leftSide hr {
+    width: 8%;
+    background-color: orange;
+    margin: 0;
+    height: 2px;
+}
+
+.icons img {
+    margin-left: -20px;
+    padding-bottom: 25px;
+}
+
+.icons {
+    text-align: center;
+    margin-left: -10px;  
+}
+
+.column1 img {
+    margin-left: -20px;
+}
+
+.rightSide img {
+    padding-bottom: 30px;
+}
+
+
+
+/* Phones */
+@media only screen and (min-width : 320px) and (max-width : 767px) {
+    .icons img {
+        margin: 0%;
+        padding: 0%;
+    }
+    
+    .wrapper p {
+        margin: 5%;
+        text-align: center;
+    }
+    
+    #lastParagraph {
+        padding-bottom: 20px;
+    }
+    
+    .rightSide img {
+        padding-bottom: 5%;
+        width: 115%;
+    }
+    
+    .column2 {
+        margin-left: -20px;
+        margin-right: 20px;
+    }
+}
+
+
+
+/* Tablets, Desktops */
+@media only screen and (min-width : 768px) and (max-width : 1220px) {
+    .row {
+        padding: 3%;
+    }
+    
+    .rightSide img {
+        padding-bottom: 5%;
+        width: 100%;
+    }
+    
+    .wrapper {
+        font-size: 10px;
+        margin-top: -63px;
+        width: 100%;
+    }
+    
+    .icons img {
+        margin: 0%;
+        padding: 0%;
+        margin-left: -20px;
+    }
+    
+    h1 {
+        font-size: 70%;
+    }
+    
+    h2 {
+        font-size: 130%;
+    }
+    
+    .leftSide p {
+        font-size: 90%;
+    }
+    
+    .wrapper p {
+        margin: 0;
+        padding-bottom: 10px;
+    }
+}
