@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    
+    <body>
+        <form action="form_process.php" class="wrapper" method="post">
+            <div class="form-element">
+                <p><label>Email</label></p>
+                <input id="email" placeholder="Enter email" type="text" value="" name="email">
+                <div id="emailError"></div>
+            </div>
+            <div class="form-element">
+                <p><label>Subject</label></p>
+                <input id="subject" value="" placeholder="Subject" name="subject">
+                <div id="subjectError"></div>
+            </div>
+            <div class="form-element">
+                <p><label>Message</label></p>
+                <textarea id="message" value="" type="text" placeholder="Your message here..." name="message"></textarea>
+                <div id="messageError"></div>
+            </div>
+            <div id="submit-success"></div>
+            <input id="submit-btn" type="submit" value="Submit" name="submit">
+        </form>
+        
+        <script src="scripts/jquery-3.1.1.min.js"></script>
+        <script src="scripts/form_validation.js"></script>
+    </body>
+</html>
