@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles/main/style.css"/>
+    </head>
+    <body>
+        <div class="main-container">
+            <section class="order-wrapper">
+                <h1>Order food</h1>
+                <div class="input-wrapper">
+                    <label>Name: </label>
+                    <input id="name-input"/>
+                </div>
+                <div class="input-wrapper">
+                    <label>Food: </label>
+                    <input id="order-input"/>
+                </div>
+                <button id="order-btn">Order</button>
+                <audio id="add-order-audio" src="audio/add_order.mp3"></audio>
+            </section>
+            <section id="orders-list">
+                <audio id="delete-order-audio" src="audio/delete_order.mp3"></audio>
+            </section>
+        </div>
+        <aside class="side-content">
+            <div class="icons-wrapper">
+                <a href="#">
+                    <div class="icon facebook"></div>
+                </a>
+                <a href="#">
+                    <div class="icon pinterest"></div>
+                </a>
+                <a href="#">
+                    <div class="icon twitter"></div>
+                </a>
+                <a href="#">
+                    <div class="icon google"></div>
+                </a>
+                <a href="#">
+                    <div class="icon blogger"></div>
+                </a>
+                <a href="#">
+                    <div class="icon youtube"></div>
+                </a>
+            </div>
+            <div id="drag-box" class="vote-box-wrapper">
+                <div id="click-drag-box" class="click-drag">
+                    <-Drag
+                </div>
+                <div id="box-stack">
+                    <div id="vote-box-id" class="box vote-box">
+                        <h2>Favourite food?</h2>
+                        <input class="checkbox-input" type="checkbox"/> Chicken<br />
+                        <input class="checkbox-input" type="checkbox"/> Beans<br />
+                        <input class="checkbox-input" type="checkbox"/> Eggs<br />
+                        <input class="checkbox-input" type="checkbox"/> Cheese<br />
+                        <input class="checkbox-input" type="checkbox"/> Bread and water<br />
+                        <button id="vote-btn">VOTE</button>
+                    </div>
+                    <div id="result-box-id" class="box result-box">
+                        <h2>Thank You!<br /><u>Results</u></h2>
+                        <div class="result-list">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <script src="scripts/jquery-3.1.1.min.js"></script>
+        <script src="scripts/orders/btn_audio.js"></script>
+        <script src="scripts/orders/add_element.js"></script>
+        <script src="scripts/orders/order_list.js"></script>
+        <script src="scripts/orders/make_order.js"></script>
+        <script src="scripts/orders/remove_order.js"></script>
+        <script src="scripts/orders/orders_main_script.js"></script>
+        <script src="scripts/votes/add_vote.js"></script>
+        <script src="scripts/votes/votes_main_script.js"></script>
+    </body>
+</html>

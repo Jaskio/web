@@ -1,0 +1,239 @@
+@import "../colors/colors.scss";
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+@import url('https://fonts.googleapis.com/css?family=Cookie');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: indie flower;
+    font-size: 20px;
+}
+
+body {
+    background-image: url("../../images/background.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    overflow-y: hidden;
+}
+
+.main-container {
+    background-color: $mainBackground;
+    display: inline-flex;
+    margin-left: 8%;
+    margin-top: 5%;
+    width: 50%;
+    max-height: 80%;
+    .order-wrapper {
+        width: 40%;
+        margin: 0 3%;
+        h1 {
+            font-size: 48px;
+            color: $fontColor;
+            font-family: cookie;
+            margin: 9% 5%;
+        }
+        .input-wrapper {
+            display: flex;
+            margin-bottom: 5%;
+            label {
+                width: 60px;
+            }
+            input {
+                outline: none;
+                width: 80%;
+            }
+        }
+        #order-btn {
+            background-color: $orderBtn;
+            border: 0px white solid;
+            padding: 2% 6%;
+            outline: none;
+            display: block;
+            margin: 0 auto;
+            margin-top: 13%;
+            transition: 500ms;
+        }
+        #order-btn:hover {
+            background-color: $orderBtnHover;
+            border: 1px $orderBtnBorder solid;
+            color: $orderBtn;
+        }
+        #order-btn:active {
+            transform: scale(0.7, 0.7);
+        }
+    }
+
+    #orders-list {
+        background-color: $listBackground;
+        text-align: left;
+        width: 60%;
+        height: 80vh;
+        overflow-y: auto;
+        overflow-x: hidden;
+        .order-element {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 5%;
+            background-color: $orderElement;
+            margin: 4%;
+            padding: 2%;
+            .remove-btn {
+                background-color: $removeBtnBackground;
+                border: none;
+                height: 20%;
+                width: 70px;
+                color: $removeBtnText;
+                outline: none;
+                transition: 500ms;
+            }
+            .remove-btn:hover {
+                background-color: $removeBtnHover;
+            }
+            .list-span  {
+                color: $listSpan;
+            }
+        }
+        .slide-out {
+            position: relative;
+            left: 0;
+            -webkit-animation: slide-out 500ms forwards;
+            @-webkit-keyframes slide-out {
+                100% {left: calc(80% + 100px);}
+            }
+        }
+    }
+}
+
+.side-content {
+    float: right;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 7%;
+    overflow-x: hidden;
+    .icons-wrapper {
+        display: flex;
+        align-items: flex-end;
+        flex-direction: column;
+        margin-bottom: 10px;
+        .icon {
+            background-position: left;
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 60px;
+            height: 40px;
+            position: relative;
+            left: 20px;
+            transition: 200ms ease-in-out;
+        }
+        .icon:hover {
+            left: 0;
+        }
+        .facebook {
+            background-image: url(../../icons/facebook-icon.png);
+            background-color: $facebookIcon;
+        }
+        .pinterest {
+            background-image: url(../../icons/pinterest-icon.png);
+            background-color: $pinterestIcon;
+        }
+        .twitter {
+            background-image: url(../../icons/twitter-icon.png);
+            background-color: $twitterIcon;
+        }
+        .google {
+            background-image: url(../../icons/google-icon.png);
+            background-color: $googleIcon;
+        }
+        .blogger {
+            background-image: url(../../icons/blogger-icon.png);
+            background-color: $bloggerIcon;
+        }
+        .youtube {
+            background-image: url(../../icons/youtube-icon.png);
+            background-color: $youtubeIcon;
+        }
+    }
+    .vote-box-wrapper {
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        left: 210px;
+        overflow: hidden;
+        align-items: center;
+        .click-drag {
+            margin-left: 10px;
+            width: 70px;
+            height: 30px;
+            font-weight: bold;
+            cursor: context-menu;
+            border-top: 35px solid transparent;
+            border-bottom: 35px solid transparent;
+            border-right: 10px solid #5D29FF;
+            -webkit-animation: pulsate 1s;
+            -webkit-animation-iteration-count: infinite;
+            @-webkit-keyframes pulsate {
+                0% {
+                    -webkit-transform: scale(1.0, 1.0);
+                    opacity: 0.5;
+                }
+                50% {
+                    -webkit-transform: scale(1.2, 1.2);
+                    opacity: 1.0;
+                }
+                100% {
+                    -webkit-transform: scale(1.0, 1.0);
+                    opacity: 0.5;
+                }
+            }
+            @-webkit-keyframes fadeout {
+                0% {
+                    opacity: 1;
+                }
+                100% {
+                    opacity: 0;
+                }
+            }
+        }
+        .box {
+            background-color: $voteBox;
+            width: 210px;
+            height: 260px;
+        }
+        .vote-box {
+            position: absolute;
+            padding: 7%;
+            opacity: 1;
+            z-index: 1;
+            h2 {
+                margin-bottom: 10px;
+            }
+            #vote-btn {
+                margin-left: 20px;
+                margin-top: 10px;
+                padding: 1% 7%;
+            }
+        }
+        .result-box {
+            text-align: center;
+            padding-top: 7%;
+            position: relative;
+            opacity: 0;
+            h2 {
+                line-height: 35px;
+            }
+        }
+        @-webkit-keyframes fadeout {
+            0% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0;
+                z-index: 0;
+            }
+        }
+    }
+}
