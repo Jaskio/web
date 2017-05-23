@@ -1,0 +1,50 @@
+.drag-drop-content {
+    margin: 15px 15px;
+}
+
+.box-wrapper {
+    width: 100px;
+}
+
+.drag-box {
+    background-color: #5199FF;
+    color: #FFF;
+    width: 80px;
+    height: 60px;
+    cursor: move;
+    z-index: 999;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    float: left;
+    text-align: center;
+}
+
+.remove-btn {
+    width: 10px;
+    cursor: pointer;
+    pointer-events: auto;
+    position: relative;
+    top: 25px;
+    left: 60px;
+    display: none;
+}
+
+.drop-area {
+    border: 1px #373737 solid;
+    background-color: #F5F5F5;
+    width: 200px;
+    height: 300px;
+    position: relative;
+    left: 300px;
+    top: 15px;
+    padding: 5px;
+    text-align: center;
+    display: inline-block;
+
+    & > span {
+        color: #B4B4B4;
+        position: relative;
+        top: 40%;
+        font-size: 22px;
+    }
+}

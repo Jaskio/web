@@ -1,0 +1,20 @@
+.header {
+    width: 100%;
+    height: 40px;
+    background-color: #7783FF;
+
+    & ul {
+        list-style: none;
+        display: flex;
+        @include vertical-align(relative);
+
+        & li {
+            width: 100px;
+            cursor: pointer;
+            background-color: #F7B85E;
+            margin-right: 10px;
+            text-align: center;
+            padding: 3px;
+        }
+    }
+}
