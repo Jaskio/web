@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css?family=Karla');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: #000;
+    font-family: Karla;
+    line-height: 1.2;
+}
+
+.recipesList__item,
+.recipesList__overlap {
+    width: 410px;
+    height: 220px;
+    display: block;
+    position: absolute;
+    left: 150px;
+    top: 100px;
+    overflow: hidden;
+    outline: 0px solid #000;
+    cursor: pointer;
+}
+
+.recipesList__item {
+    transition: .55s cubic-bezier(.28,0,.07,1);
+}
+
+.recipesList__overlap {
+    transition: 900ms cubic-bezier(0.85, 0.04, 0.47, 0.99);
+}
+
+.recipesList__item--reset {
+    transition: none !important;
+}
+
+.recipesList__item--slide {
+    transition: 900ms cubic-bezier(0.65, 0.05, 0.36, 1) !important;
+    left: 100% !important;
+}
+
+.recipesList__overlap {
+    background: #101010;
+    left: 0;
+    top: 0;
+}
+
+.recipesList__overlap--slide {
+    left: 100%;
+}
+
+.recipesList__overlap--reset {
+    transition: none;
+    left: 0;
+}
+
+.recipeContent {
+    position: fixed;
+    opacity: 0;
+    transition: 400ms all ease-in-out; 
+    z-index: 10;
+    width: inherit;
+    height: inherit;
+}
+
+.recipeContent--active {
+    opacity: 1;
+    transition-delay: 100ms;
+}
+
+.recipeContent--reset {
+    transition: none;
+}
+
+.recipeNumberImage {
+    color: #fff;
+    display: flex;
+    position: absolute;
+    left: 72%;
+    transform: translateY(150%);
+    transition: .55s cubic-bezier(.28,0,.07,1);
+}
+
+.recipeNumberImage__number {
+    font-size: 44px;
+    font-family: Playfair Display;
+    padding-right: 15px;
+}
+
+.recipeNumberImage__line {
+    width: 80px;
+    height: 2px;
+    margin-top: 27px;
+    background-color: #fff;
+}
+
+.recipesList__item:hover .recipeNumberImage {
+    left: 67%;
+}
+
+.recipeInfo {
+    color: #fff;
+    padding-left: 20px;
+    position: absolute;
+    bottom: -42px;
+}
+
+.recipeInfo h4 {
+    font-size: 15px;
+    margin: 0;
+}
+
+.recipeInfo p {
+    font-size: 12px;
+    font-style: italic;
+    margin: 0;
+}
+
+.recipesList__image {
+    background-image: url("images/burger.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: -150px;
+    margin-top: -100px;
+    width: 100vw;
+    height: 100vh;
+    transition: 900ms;
+}
+
+.recipesList__image--reset {
+    transition: none;
+}
+
+.recipesList__item:hover {
+    outline: 20px solid #000;
+    outline-offset: -20px;
+}
+
+.recipesList__image--active {
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    cursor: auto;
+    transition: 900ms ease;
+}
+
+.recipesList__image--active:hover {
+    outline-offset: 0px;
+}
+
+.recipesList__image--active .recipesList__image {
+    margin-left: 0px;
+    margin-top: 0px;
+}
+
+.recipe {
+    width: 100%;
+    overflow-y: scroll;
+    padding: 45px 150px 70px 100px;
+}
+
+.recipeSingle {
+    width: 50vw;
+    height: 100vh;
+    background: #fff;
+    position: relative;
+    float: right;
+    left: 50vw;
+    transition: 800ms cubic-bezier(0.65, 0.05, 0.36, 1);
+    display: flex;
+    justify-content: space-between;
+    z-index: 11;
+}
+
+.recipeSingle--active {
+    left: 0px;
+    transition-delay: 700ms;
+}
+
+.ingredientsTitle,
+.info,
+.ingredient {
+    margin-top: 50px;
+    opacity: 0;
+    transition: 400ms all ease-in-out;
+    transform: translate3d(0,50px,0);
+}
+
+.ingredientsTitle--active,
+.info--active,
+.ingredient--active {
+    opacity: 1;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+}
+
+.ingredientsTitle {
+    transition-delay: 1450ms;
+    font-family: Playfair Display;
+    font-size: 70px;
+}
+
+.info {
+    transition-delay: 1550ms;
+    font-size: 17px;
+}
+
+.info p {
+    margin: 4px 0;
+}
+
+.info p:nth-child(1) {
+    font-style: italic;
+    font-weight: 700;
+}
+.info p:nth-child(2) span,
+.info p:nth-child(3) span,
+.info p:nth-child(4) span {
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.ingredient {
+    transition-delay: 1650ms;
+}
+
+.ingredient h3,
+.ingredientDetails__item h3 {
+    font-size: 28px;
+    text-transform: uppercase;
+    margin: 4px 0;
+    font-weight: 500;
+}
+
+.ingredientDetails__item h3 {
+    margin-top: 50px;
+}
+
+.ingredientDetails__item p {
+    line-height: 1.5;
+    margin: 4px 0;
+    font-size: 17px;
+}
+
+.ingredient__item {
+    margin-top: 8px;
+    display: flex;
+    justify-content: space-between;
+    background-image: url("images/dot.svg");
+    background-repeat: repeat-x;
+    background-size: 5px;
+    background-position: center 14px;
+}
+
+.ingredient__item p {
+    margin: 0;
+    background-color: #fff;
+}
+
+.lineDivider {
+    background-image: url("images/dot.svg");
+    background-repeat: repeat-x;
+    height: 4px;
+    margin: 70px 0;
+}
+
+.line {
+    position: relative;
+    left: 60%;
+    top: 10px;
+    width: 0px;
+    height: 1px;
+    background-color: #010101;
+    transition: 500ms cubic-bezier(0.85, 0.04, 0.47, 0.99); 
+    transition-delay: 1800ms;
+    transform: rotate(45deg);
+    transform-origin: 0%;
+}
+
+.line--active {
+    width: 200px;
+}
+
+.sidetrack {
+    background: #000;
+    height: 100vh;
+    padding: 9px;
+    position: absolute;
+    z-index: 100;
+    right: -52px;
+    transition: 800ms cubic-bezier(0.65, 0.05, 0.36, 1);
+}
+
+.sidetrack--active {
+    transition-delay: 700ms;
+    right: 0;
+}
+
+.sidetrack__close {
+    position: relative;
+    top: 14px;
+    height: 26px;
+    cursor: pointer;
+}
+
+.closeButton__line {
+    background: #fff;
+    height: 1px;
+    width: 34px;
+    display: block;
+    position: relative;
+    top: 12px;
+}
+
+.closeButton__line:nth-child(1) {
+    transform: rotate(45deg);
+}
+
+.closeButton__line:nth-child(2) {
+    transform: rotate(-45deg);
+}
+
+::-webkit-scrollbar { 
+    display: none; 
+}
