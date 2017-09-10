@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>JS DRAG AND DROP</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="main.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="mainContainer">
+            <header class="header">
+                HEADER
+            </header>
+            <div class="options">
+                <div class="optionsButtons">
+                    <div class="form">
+                        <div class="formFields">
+                            <div class="formFields__input">
+                                <input type="text" value="" placeholder="Title">
+                                <input type="text" value="" placeholder="Description">
+                            </div>
+                            <button class="optionButton optionButton__add" type="button" onclick="addTask();">Add task</button>
+                        </div>
+                    </div>
+                    <div class="buttons">
+                        <button class="optionButton optionButton__remove" type="button" onclick="dropStorage();">Drop storage</button>
+                    </div>
+                </div>
+            </div>
+            <div class="content">
+                <div class="contentColumn">
+                    <h3 class="contentColumn__title">To-Do</h3>
+                    <div class="contentColumn__tasks" draggable="true">
+                        <!-- element is added from localStorage -->
+                    </div>
+                </div>
+                <div class="contentColumn">
+                    <h3 class="contentColumn__title">Doing</h3>
+                    <div class="contentColumn__tasks">
+                        <!-- element is added from localStorage -->
+                    </div>
+                </div>
+                <div class="contentColumn">
+                    <h3 class="contentColumn__title">Done</h3>
+                    <div class="contentColumn__tasks">
+                        <!-- element is added from localStorage -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="js/helper.js"></script>
+        <script src="js/events.js"></script>
+        <script src="main.js"></script>
+    </body>
+</html>
